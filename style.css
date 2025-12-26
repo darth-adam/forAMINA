@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: "Poppins", "Comic Sans MS", sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+  color: #4a0033;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.center {
+  margin-top: 20vh;
+  padding: 10px;
+}
+
+h1, h2 {
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+}
+
+.buttons button {
+  padding: 14px 22px;
+  margin: 10px;
+  font-size: 17px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #ff69b4;
+  color: white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(255,182,193,0.96);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Envelope */
+.envelope {
+  width: 240px;
+  height: 160px;
+  background: white;
+  margin: 50px auto;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ff9acb;
+  clip-path: polygon(0 0, 50% 55%, 100% 0, 100% 100%, 0 100%);
+}
+
+.letter {
+  width: 90%;
+  max-width: 520px;
+  background: #fff0f6;
+  margin: 30px auto;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.35);
+}
+
+.aizen {
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 16px;
+}
+
+.no-section {
+  margin-top: 20vh;
+}
+
+.no-section p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.goku {
+  width: 220px;
+}
+
+/* Couples */
+#couples {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.us-text {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#couples img {
+  width: 140px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Floating */
+@keyframes randomFloat {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(var(--x), var(--y)); }
+  100% { transform: translate(0,0); }
+}
+
+/* Fireworks */
+#fireworks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 📱 Mobile tweaks */
+@media (max-width: 600px) {
+  #couples img {
+    width: 110px;
+  }
+  .us-text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 💕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="musicPrompt" class="popup">
+  <h2>Wanna play some music? 🎶</h2>
+  <button onclick="startMusic()">Yes 💖</button>
+  <button onclick="closePrompt()">No 🙈</button>
+</div>
+
+<div id="questionSection" class="center">
+  <h1>Wanna start dating? 💞</h1>
+  <div class="buttons">
+    <button onclick="choiceOne()">we already are silly</button>
+    <button onclick="choiceTwo()">no ew get away from me</button>
+    <button onclick="choiceThree()">hell yeah</button>
+  </div>
+</div>
+
+<div id="envelopeSection" class="hidden">
+  <div class="envelope" onclick="openEnvelope()"></div>
+  <p>Tap to open 💌</p>
+</div>
+
+<div id="letter" class="hidden letter">
+  <p>
+    hello there bbg 💕<br><br>
+    ts yo bf adam the goat 🐐<br><br>
+    we're goated fr and i just installed a
+    spying virus in your phone so you don’t
+    cheat or say anything bad about me<br><br>
+    lol jk... or am i?<br><br>
+  </p>
+  <img src="images/aizen.jpg" class="aizen">
+</div>
+
+<div id="noSection" class="hidden no-section">
+  <img src="images/goku.png" class="goku">
+  <p>you're on thin ice buddy</p>
+  <button onclick="goBack()">go back</button>
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<div id="couples" class="hidden">
+  <h2 class="us-text">this is literally us bbg 💕</h2>
+  <img src="images/couples/couple1.jpg" class="float">
+  <img src="images/couples/couple2.jpg" class="float">
+  <img src="images/couples/couple3.jpg" class="float">
+</div>
+
+<audio id="introMusic" src="music/intro.mp3" loop></audio>
+<audio id="aizenMusic" src="music/aizen_start.mp3" loop></audio>
+<audio id="gokuMusic" src="music/goku.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
